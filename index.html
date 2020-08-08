@@ -21,46 +21,58 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <div id="sidebar">
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">
-          <i data-feather="home"></i>
-          Main <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#">
-          <i data-feather="book-open"></i>
-          Education
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i data-feather="pen-tool"></i>          
-          Work Experience
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i data-feather="file"></i>
-          Projects
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i data-feather="phone"></i>
-          Contact
-        </a>
-      </li>
-    </ul>
+    <div id="sidebar-bg">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">
+            <i data-feather="home"></i>
+            Main <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#work">
+            <i data-feather="pen-tool"></i>          
+            Work Experience
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i data-feather="file"></i>
+            Projects
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">
+            <i data-feather="book-open"></i>
+            Education
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i data-feather="mail"></i>
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <script>
       feather.replace()
     </script>
   </div>
-  <div id="title">
-    <h1>Hi, I'm Angela</h1> 
-    <img id="profile" src="assets/images/profile.jpg" alt="profile">
-  </div> 
+  <div id="content">
+    <div id="title" class="section">
+      <h1>Hi, I'm Angela</h1> 
+      <img id="profile" src="assets/images/profile.jpg" alt="profile">
+    </div> 
+    <div class="section">  
+      <a id="work">
+        <h3>Work Experience</h3>
+      </a>
+    </div>
+  </div>
+
+
 
 </body>
 </html>
