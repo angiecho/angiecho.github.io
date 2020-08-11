@@ -21,73 +21,108 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <div id="sidebar">
-    <div id="sidebar-bg">
-      <ul class="nav flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">
-            <i data-feather="home"></i>
-            Main <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#work">
-            <i data-feather="pen-tool"></i>          
-            Work Experience
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">
-            <i data-feather="file"></i>
-            Projects
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#education">
-            <i data-feather="book-open"></i>
-            Education
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">
-            <i data-feather="mail"></i>
-            Contact
-          </a>
-        </li>
-      </ul>
-    </div>
-
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">
+          <i data-feather="home"></i>
+          Main <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#work">
+          <i data-feather="pen-tool"></i>          
+          Work Experience
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">
+          <i data-feather="file"></i>
+          Projects
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#education">
+          <i data-feather="book-open"></i>
+          Education
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">
+          <i data-feather="mail"></i>
+          Contact
+        </a>
+      </li>
+    </ul>
     <script>
       feather.replace()
     </script>
   </div>
   <div id="content">
     <div id="title" class="section">
-      <h1>Hi, I'm Angela</h1> 
+      <h1>Hi, I'm Angela</h1>      
       <img id="profile" src="assets/images/profile.jpg" alt="profile">
     </div> 
     <div class="section">  
       <a id="work">
         <h3>Work Experience</h3>
+        <div class="section-content first">
+          <div class="section-title">
+            <h5>Web Developer, Fortinet</h5>
+            <h6>July 2019 - Present</h6>
+          </div>
+          <p>
+            I currently work as a full stack Web Developer on the FortiDeceptor team.
+            <br>We identify, deceive, and capture network attacks! 
+            <br>For the features that I implement I often define and design them as well.
+          </p>
+        </div>
         <div class="section-content">
-          <h5>
-            Web Developer, Fortinet
-          </h5>
-          <span>I currently work as a full stack Web Developer on the FortiDeceptor team.
-            We identify, deceive, and capture network attacks! 
-          </span>
+          <div class="section-title">
+            <h5>Research Engineer, University of British Columbia</h5>
+            <h6>June 2018 - April 2019</h6>
+          </div>
+          <p>
+            In this role I managed projects and developed medical technology solutions in a multidisciplinary collective of healthcare practitioners and engineers.
+            <br>Over the course of my time in this position, I was involved with over 8 different projects and accumulated various pending patents as well as journal authorships. 
+            <br>I owned the development of, but not limited to, the following:
+            <br>●	Owned the development of PatientLink, a web app that provides direct updates of a patient’s status from the surgical team to friends and family, helping to ease waiting room anxiety as well as reduce reliance on hospital staff. (Node.js)
+            <br>●	Developed an Android application to record correlations between hand tremors and residual medications measured in a patient to provide a method of accurately administering drugs and minimizing side effects caused by excessive dosages.
+            <br>●	Built POC to aid in preventing potentially fatal errors where surgical items are left in the patient by using computer vision to recognize and track surgical items circulating in an operating room. (OpenCV and TensorFlow)
+            <br>Some of my responsibilities also included competitive research, customer discovery, and the overseeing volunteer researchers. 
+          </p>
         </div>
       </a>
     </div>
     <div class="section">  
       <a id="projects">
-        <h3>Projects</h3>
-        <div class="section-content">
-          <h5>
-            Team Lead, Libra
-          </h5>
+        <h3>Projects & Activities</h3>
+        <div class="section-content first">
+          <h5> Team Lead, Libra</h5>
+          <h6>September 2017 - April 2018</h6>
           <span>
             <a href="https://docs.google.com/presentation/d/1X8uHDs3Q8OKLp84V-E3dzZSxeLp-3s0QzWoF2CGh5_o/edit?usp=sharing">Libra Presentation</a>
           </span>
+          <p>
+            During an 8-month long intensive venture design program, I led a multidisciplinary team of 5 engineering and commerce students. 
+            Our team consisted of myself in computer engineering as well a teammate in materials engineering, a double major in kinesiology and business, as well as two individuals from the commerce program.
+            <br>We started off by identifying customer pains in the form of bra fit and breast pain leading to the development of an MVP web application to 
+                match users with suggested bra designs applying a user’s self-reported pains and breast characteristics as input.
+            <br>For the development side of things, as the only teammate with software experience I implemented the web application while guiding my teammates 
+                in the usage of SQL to build a database of bra characteristics. With a tight timeline for demo-day, our web application was built with the features
+                for the user to input their chest measurements and select common, specific issues they had with bras in the mainstream market. Our hope was to utilize
+                Computer Vision and enhanced security to take a 3D model of chests and match them to their best bras.
+            <br>Through the course of the project I led the team through product pivots as well as the market research and the development of user requirements, 
+                release plans, marketing strategies, and financial projections.
+          </p>
+        </div>
+        <div class="section-content">
+          <h5> President, Electrical and Computer Engineering Student Society (UBC)</h5>
+          <h6>May 2016 - May 2017</h6>
+          <p>
+            Represented the interests of 1000+ undergraduate students to the faculty and within the broader university.
+            <br>Supervised the activities of the society by providing support, assistance, and management to 30+ team members.
+            <br>Organized workshops, alumni networking events, and social events to promote professional development, provide academic guidance, and improve student well-being.
+          </p>
         </div>
       </a>
     </div>
@@ -96,8 +131,9 @@
         <h3>Education</h3>
         <div class="section-content">
           <h5>University of British Columbia</h5>
-          <span>Bachelor of Applied Science, Computer Engineering</span>
-          <span>Sep 2013 - May 2018</span>
+          <h6>June 2018 - April 2019</h6>
+          <span>Bachelor of Applied Science, <b>Computer Engineering</b></span>
+          <p></p>
         </div>
       </a>
     </div>
@@ -106,15 +142,12 @@
         <h3>Contact</h3>
         <div class="section-content">
           <ul>
-            <li>Email: angela.hanna.cho@gmail.com</li>
-            <li>LinkedIn: linkedin.com/in/angecho/</li>
+            <li>Email: angela.hanna.cho(at)gmail.com</li>
+            <li>LinkedIn: <a href="linkedin.com/in/angecho/">linkedin.com/in/angecho/</a></li>
           </ul>
         </div>
       </a>
     </div>
   </div>
-
-
-
 </body>
 </html>

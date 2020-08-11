@@ -15,16 +15,18 @@ body {
 
 #sidebar {
   width: 20%;
+  height: 100%;
   min-width: 200px;
+  padding-top: 10%;
+  padding-left: 3%;
+  position: fixed;
+  background: rgba(248, 249, 250, 0.31);
 }
 
 #sidebar-bg {
   width: auto;
   height: 100%;
-  padding-top: 10%;
-  padding-left: 5%;
-  position: fixed;
-  background: rgba(248, 249, 250, 0.31);
+ 
 }
 
 .nav-item a{
@@ -34,9 +36,10 @@ body {
 }
 
 #content {
-  margin-left:auto;
+  margin-left: 20%;
   padding-top: 8%;
   padding-right: 10%;
+  padding-left: 5%;
   flex-grow: 1;
 }
 
@@ -45,18 +48,36 @@ body {
   display: block;
 }
 
+.section-content {
+  padding-top: 15px;
+  border: solid #000;
+  border-width: 1px 0 0 0;
+}
+
+.first {
+  border-width: 0;
+}
+
+#title {
+  height: 300px;
+  text-align:center; 
+  display:table;
+  float: right;
+  width: 100%;
+}
+
 #title h1 {
   font-family: Raleway;
-  padding-right: 10em;
   color: white;
-  display: inline-block;
+  display:table-cell; 
+  vertical-align:middle
 }
 
 #profile {
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 300px;
+  max-height: 300px;
   border-radius: 50%;
-  display: inline-block;
+  /* float: right; */
 }
 
 h3 {
